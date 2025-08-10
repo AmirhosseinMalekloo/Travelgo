@@ -1,0 +1,4 @@
+/* TravelGo custom styles */
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
+header { color:#fff; }
+#booking-result { min-height:28px; }

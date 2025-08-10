@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TravelGo — Tour Landing (Demo)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">TravelGo</a>
+    <div class="ms-auto"><a href="#book" class="btn btn-outline-light">Book Now</a></div>
+  </div>
+</nav>
+
+<header class="py-5 text-white" style="background:linear-gradient(180deg,#0b5ed7,#6610f2);">
+  <div class="container text-center">
+    <h1>Discover the world with TravelGo</h1>
+    <p class="lead">Responsive landing page with AJAX booking form (demo)</p>
+    <a href="#book" class="btn btn-light btn-lg">Start Booking</a>
+  </div>
+</header>
+
+<main class="container my-5">
+  <section class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <h2>Popular Destinations</h2>
+      <p>Short descriptions of curated tours with highlights and quick CTAs.</p>
+      <ul>
+        <li>Rome: History & food</li>
+        <li>Tokyo: Culture & tech</li>
+        <li>New Zealand: Nature</li>
+      </ul>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="assets/img/hero.svg" alt="travel" class="img-fluid" style="max-height:260px;">
+    </div>
+  </section>
+
+  <section id="book" class="p-4 border rounded">
+    <h3>Book a tour</h3>
+    <form id="booking-form" class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Full name</label>
+        <input type="text" name="name" required class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input type="email" name="email" required class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Destination</label>
+        <select name="destination" class="form-select">
+          <option>Rome</option><option>Tokyo</option><option>New Zealand</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Date</label>
+        <input type="date" name="date" class="form-control">
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" id="submit-book" type="submit">Submit Booking (AJAX)</button>
+        <div id="booking-result" class="mt-3"></div>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="bg-light py-4">
+  <div class="container text-center">
+    <small>TravelGo demo — static landing page</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
